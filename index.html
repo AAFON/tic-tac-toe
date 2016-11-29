@@ -7,19 +7,19 @@
   <body>
     <svg id="game-board" width="80%" viewBox="0 0 300 300">
       <!-- Create all the shapes for your game board here! -->
+      <rect width="300" height="300" x="0" y="0" fill="black"/>
       <!--SQUARES-->
-      <rect x="0" y="0" width="90"height="90"fill="black" onclick="TOPLEFT()"/>
-      <rect x="0" y="90" width="90"height="90"fill="white"/>
-      <rect x="0" y="180" width="90"height="90"fill="black"/>
-      <rect x="90" y="0" width="90"height="90"fill="white" onclick="TOPMID()"/>
-      <rect x="90" y="90" width="90"height="90"fill="black"/>
-      <rect x="90" y="180" width="90"height="90"fill="white"/>
-      <rect x="180" y="0" width="90"height="90"fill="black"/>
-      <rect x="180" y="90" width="90"height="90"fill="white"/>
-      <rect x="180" y="180" width="90"height="90"fill="black"/>
-
-
+      <rect width="85" height="87" x="8" y="10" fill="grey" onclick="topLeft()"/>
+      <rect width="85" height="87" x="108" y="10" fill="grey" onclick="topMid()"/>
+      <rect width="85" height="87" x="208" y="10" fill="grey" onclick="topRight()"/>
+      <rect width="85" height="87" x="8" y="110" fill="grey" onclick="midLeft()"/>
+      <rect width="85" height="87" x="108" y="110" fill="grey" onclick="midMid()"/>
+      <rect width="85" height="87" x="208" y="110" fill="grey" onclick="midRight()"/>
+      <rect width="85" height="87" x="8" y="210" fill="grey" onclick="botLeft()"/>
+      <rect width="85" height="87" x="108" y="210" fill="grey" onclick="botMid()"/>
+      <rect width="85" height="87" x="208" y="210" fill="grey" onclick="botRight()"/>
     </svg>
+
 
     <!-- This line of code points to your JavaScript file. No need to touch it. -->
     <script src="tic-tac-toe.js"></script>
